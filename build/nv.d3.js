@@ -14,9 +14,10 @@ nv.logs = {}; //stores some statistics and potential error messages
 nv.dom = {}; //DOM manipulation functions
 
 // Node/CommonJS - require D3
-if (typeof(module) !== 'undefined' && typeof(exports) !== 'undefined' && typeof(d3) == 'undefined') {
-    d3 = require('d3');
-}
+// Commenting out for angular compatability
+//if (typeof(module) !== 'undefined' && typeof(exports) !== 'undefined' && typeof(d3) == 'undefined') {
+//    d3 = require('d3');
+//}
 
 nv.dispatch = d3.dispatch('render_start', 'render_end');
 
